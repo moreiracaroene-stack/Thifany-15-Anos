@@ -1,33 +1,94 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <title>Thifany — 15 Anos</title>
 
-<!-- Prévia do convite ao compartilhar -->
-<meta name="description" content="Você é nosso convidado para celebrar os 15 anos da Thifany ✨">
+<!-- DESCRIÇÃO DO SITE -->
 
-<meta property="og:title" content="Thifany — 15 Anos ✨">
-<meta property="og:description" content="Você é nosso convidado para celebrar esse momento especial 💜">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/">
+<meta name="description"
+      content="Você é nosso convidado para celebrar os 15 anos da Thifany ✨">
 
-<meta property="og:image" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:alt" content="Convite Especial — Thifany 15 anos">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Thifany — 15 Anos ✨">
-<meta name="twitter:description" content="Você é nosso convidado para celebrar esse momento especial 💜">
-<meta name="twitter:image" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.png">
+<!-- PRÉVIA AO COMPARTILHAR -->
+
+<meta property="og:title"
+      content="Thifany — 15 Anos ✨">
+
+<meta property="og:description"
+      content="Você é nosso convidado para celebrar esse momento especial 💜">
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:url"
+      content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/">
+
+<meta property="og:image"
+      content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.jpg">
+
+<meta property="og:image:secure_url"
+      content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.jpg">
+
+<meta property="og:image:type"
+      content="image/jpeg">
+
+<meta property="og:image:width"
+      content="1200">
+
+<meta property="og:image:height"
+      content="785">
+
+<meta property="og:image:alt"
+      content="Convite Especial — Thifany 15 anos">
+
+
+<!-- PRÉVIA PARA OUTROS APLICATIVOS -->
+
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="Thifany — 15 Anos ✨">
+
+<meta name="twitter:description"
+      content="Você é nosso convidado para celebrar esse momento especial 💜">
+
+<meta name="twitter:image"
+      content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.jpg">
+
 
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#120022;color:#fff}
-body{min-height:100vh;display:flex;justify-content:center}
-.wrap{width:min(100vw,900px)}
+
+*{
+  box-sizing:border-box
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:#120022;
+  color:#fff
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center
+}
+
+.wrap{
+  width:min(100vw,900px)
+}
+
+
+/* VÍDEO */
 
 #video{
   display:block;
@@ -35,6 +96,9 @@ body{min-height:100vh;display:flex;justify-content:center}
   height:auto;
   background:#000
 }
+
+
+/* CONVITE APÓS O VÍDEO */
 
 .invite{
   position:relative;
@@ -49,6 +113,9 @@ body{min-height:100vh;display:flex;justify-content:center}
   height:auto
 }
 
+
+/* ÁREAS CLICÁVEIS */
+
 .hot{
   position:absolute;
   display:block;
@@ -58,12 +125,18 @@ body{min-height:100vh;display:flex;justify-content:center}
   -webkit-tap-highlight-color:transparent
 }
 
+
+/* CONFIRMAR PRESENÇA */
+
 .confirm{
   left:14%;
   top:74.5%;
   width:19%;
   height:11.5%
 }
+
+
+/* PRESENTES */
 
 .gift{
   left:40%;
@@ -72,6 +145,9 @@ body{min-height:100vh;display:flex;justify-content:center}
   height:11.5%
 }
 
+
+/* LOCALIZAÇÃO */
+
 .location{
   left:66.5%;
   top:74.5%;
@@ -79,9 +155,13 @@ body{min-height:100vh;display:flex;justify-content:center}
   height:11.5%
 }
 
+
 .hot:focus-visible{
   outline:3px solid #fff
 }
+
+
+/* BOTÃO ASSISTIR NOVAMENTE */
 
 #replay{
   display:none;
@@ -93,23 +173,46 @@ body{min-height:100vh;display:flex;justify-content:center}
   font-size:16px;
   cursor:pointer
 }
+
 </style>
 
 </head>
+
 
 <body>
 
 <main class="wrap">
 
-  <video id="video" controls playsinline preload="auto">
-    <source src="convite.mp4" type="video/mp4">
+
+  <!-- VÍDEO -->
+
+  <video
+    id="video"
+    controls
+    playsinline
+    preload="auto">
+
+    <source
+      src="convite.mp4"
+      type="video/mp4">
+
   </video>
 
-  <section id="invite" class="invite" aria-label="Convite interativo">
+
+  <!-- CONVITE INTERATIVO -->
+
+  <section
+    id="invite"
+    class="invite"
+    aria-label="Convite interativo">
+
 
     <img
       src="links.jpg"
       alt="Convite de 15 anos de Thifany com botões de confirmação, presentes e localização">
+
+
+    <!-- CONFIRMAR PRESENÇA -->
 
     <a
       class="hot confirm"
@@ -119,6 +222,9 @@ body{min-height:100vh;display:flex;justify-content:center}
       aria-label="Confirmar presença">
     </a>
 
+
+    <!-- SUGESTÕES DE PRESENTE -->
+
     <a
       class="hot gift"
       href="https://drive.google.com/file/d/1Pts1ebxCZWPBMNG6NC9ETTQ_QwmWuQmM/view?usp=drivesdk"
@@ -126,6 +232,9 @@ body{min-height:100vh;display:flex;justify-content:center}
       rel="noopener"
       aria-label="Sugestões de presente">
     </a>
+
+
+    <!-- LOCALIZAÇÃO -->
 
     <a
       class="hot location"
@@ -135,35 +244,73 @@ body{min-height:100vh;display:flex;justify-content:center}
       aria-label="Localização">
     </a>
 
+
   </section>
 
-  <button id="replay" type="button">
+
+  <!-- ASSISTIR NOVAMENTE -->
+
+  <button
+    id="replay"
+    type="button">
+
     ▶ Assistir novamente
+
   </button>
+
 
 </main>
 
+
 <script>
-const video=document.getElementById('video');
-const invite=document.getElementById('invite');
-const replay=document.getElementById('replay');
 
-video.addEventListener('ended',()=>{
-  video.style.display='none';
-  invite.style.display='block';
-  replay.style.display='block';
-  window.scrollTo({top:0,behavior:'smooth'});
+const video = document.getElementById('video');
+const invite = document.getElementById('invite');
+const replay = document.getElementById('replay');
+
+
+/* QUANDO O VÍDEO TERMINAR */
+
+video.addEventListener('ended', () => {
+
+  video.style.display = 'none';
+
+  invite.style.display = 'block';
+
+  replay.style.display = 'block';
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
 });
 
-replay.addEventListener('click',()=>{
-  invite.style.display='none';
-  replay.style.display='none';
-  video.style.display='block';
-  video.currentTime=0;
-  video.play().catch(()=>{});
-  window.scrollTo({top:0,behavior:'smooth'});
+
+/* ASSISTIR NOVAMENTE */
+
+replay.addEventListener('click', () => {
+
+  invite.style.display = 'none';
+
+  replay.style.display = 'none';
+
+  video.style.display = 'block';
+
+  video.currentTime = 0;
+
+  video.play().catch(() => {});
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
 });
+
 </script>
 
+
 </body>
+
 </html>
