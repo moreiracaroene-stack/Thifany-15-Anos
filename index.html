@@ -3,37 +3,167 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <title>Thifany — 15 Anos</title>
+
+<!-- Prévia do convite ao compartilhar -->
+<meta name="description" content="Você é nosso convidado para celebrar os 15 anos da Thifany ✨">
+
+<meta property="og:title" content="Thifany — 15 Anos ✨">
+<meta property="og:description" content="Você é nosso convidado para celebrar esse momento especial 💜">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/">
+
+<meta property="og:image" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Convite Especial — Thifany 15 anos">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thifany — 15 Anos ✨">
+<meta name="twitter:description" content="Você é nosso convidado para celebrar esse momento especial 💜">
+<meta name="twitter:image" content="https://moreiracaroene-stack.github.io/Thifany-15-Anos/preview.png">
+
 <style>
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:#120022;color:#fff}body{min-height:100vh;display:flex;justify-content:center}.wrap{width:min(100vw,900px)}
-#video{display:block;width:100%;height:auto;background:#000}
-.invite{position:relative;width:100%;display:none;line-height:0}
-.invite img{display:block;width:100%;height:auto}
-.hot{position:absolute;display:block;border-radius:50%;cursor:pointer;background:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}
-.confirm{left:14%;top:74.5%;width:19%;height:11.5%}.gift{left:40%;top:74.5%;width:19%;height:11.5%}.location{left:66.5%;top:74.5%;width:19%;height:11.5%}
-.hot:focus-visible{outline:3px solid #fff}
-#replay{display:none;width:100%;border:0;padding:14px;background:#24103b;color:#fff;font-size:16px;cursor:pointer}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#120022;color:#fff}
+body{min-height:100vh;display:flex;justify-content:center}
+.wrap{width:min(100vw,900px)}
+
+#video{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#000
+}
+
+.invite{
+  position:relative;
+  width:100%;
+  display:none;
+  line-height:0
+}
+
+.invite img{
+  display:block;
+  width:100%;
+  height:auto
+}
+
+.hot{
+  position:absolute;
+  display:block;
+  border-radius:50%;
+  cursor:pointer;
+  background:rgba(255,255,255,0);
+  -webkit-tap-highlight-color:transparent
+}
+
+.confirm{
+  left:14%;
+  top:74.5%;
+  width:19%;
+  height:11.5%
+}
+
+.gift{
+  left:40%;
+  top:74.5%;
+  width:19%;
+  height:11.5%
+}
+
+.location{
+  left:66.5%;
+  top:74.5%;
+  width:19%;
+  height:11.5%
+}
+
+.hot:focus-visible{
+  outline:3px solid #fff
+}
+
+#replay{
+  display:none;
+  width:100%;
+  border:0;
+  padding:14px;
+  background:#24103b;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer
+}
 </style>
+
 </head>
+
 <body>
+
 <main class="wrap">
+
   <video id="video" controls playsinline preload="auto">
     <source src="convite.mp4" type="video/mp4">
   </video>
+
   <section id="invite" class="invite" aria-label="Convite interativo">
-    <img src="links.jpg" alt="Convite de 15 anos de Thifany com botões de confirmação, presentes e localização">
-    <a class="hot confirm" href="https://w.app/qtg2fo" target="_blank" rel="noopener" aria-label="Confirmar presença"></a>
-    <a class="hot gift" href="https://drive.google.com/file/d/1Pts1ebxCZWPBMNG6NC9ETTQ_QwmWuQmM/view?usp=drivesdk" target="_blank" rel="noopener" aria-label="Sugestões de presente"></a>
-    <a class="hot location" href="https://maps.app.goo.gl/ASxRDYb2m1Nt3jZM7?g_st=aw" target="_blank" rel="noopener" aria-label="Localização"></a>
+
+    <img
+      src="links.jpg"
+      alt="Convite de 15 anos de Thifany com botões de confirmação, presentes e localização">
+
+    <a
+      class="hot confirm"
+      href="https://w.app/qtg2fo"
+      target="_blank"
+      rel="noopener"
+      aria-label="Confirmar presença">
+    </a>
+
+    <a
+      class="hot gift"
+      href="https://drive.google.com/file/d/1Pts1ebxCZWPBMNG6NC9ETTQ_QwmWuQmM/view?usp=drivesdk"
+      target="_blank"
+      rel="noopener"
+      aria-label="Sugestões de presente">
+    </a>
+
+    <a
+      class="hot location"
+      href="https://maps.app.goo.gl/ASxRDYb2m1Nt3jZM7?g_st=aw"
+      target="_blank"
+      rel="noopener"
+      aria-label="Localização">
+    </a>
+
   </section>
-  <button id="replay" type="button">▶ Assistir novamente</button>
+
+  <button id="replay" type="button">
+    ▶ Assistir novamente
+  </button>
+
 </main>
+
 <script>
 const video=document.getElementById('video');
 const invite=document.getElementById('invite');
 const replay=document.getElementById('replay');
-video.addEventListener('ended',()=>{video.style.display='none';invite.style.display='block';replay.style.display='block';window.scrollTo({top:0,behavior:'smooth'});});
-replay.addEventListener('click',()=>{invite.style.display='none';replay.style.display='none';video.style.display='block';video.currentTime=0;video.play().catch(()=>{});window.scrollTo({top:0,behavior:'smooth'});});
+
+video.addEventListener('ended',()=>{
+  video.style.display='none';
+  invite.style.display='block';
+  replay.style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
+replay.addEventListener('click',()=>{
+  invite.style.display='none';
+  replay.style.display='none';
+  video.style.display='block';
+  video.currentTime=0;
+  video.play().catch(()=>{});
+  window.scrollTo({top:0,behavior:'smooth'});
+});
 </script>
+
 </body>
 </html>
